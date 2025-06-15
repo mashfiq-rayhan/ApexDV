@@ -1,0 +1,193 @@
+.yourOptForNftDev {
+  position: relative;
+}
+
+.optForNftDev {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  color: #222429;
+}
+
+.text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #222429;
+  margin-bottom: 25px;
+}
+
+.green_abstract_right {
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  position: absolute;
+  right: 0;
+  top: 100px !important;
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+.button86 {
+  all: unset;
+  width: 232px;
+  height: 56px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  /* padding: 10px 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button86::after,
+.button86::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.button86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid #1caf83;
+  border-radius: 50px;
+}
+
+.button86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  border-radius: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 26, 26, 0.4) 0%,
+    rgba(26, 26, 26, 0.4) 100%
+  );
+  backdrop-filter: blur(3px);
+}
+
+.button86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+  background-color: #1caf83;
+  color: white;
+}
+
+.button86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 26, 26, 0.4) 0%,
+    rgba(26, 26, 26, 0.4) 100%
+  );
+  backdrop-filter: blur(6px);
+}
+
+.button86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+.button86 a {
+  color: #1caf83;
+  font-family: "Rubik";
+}
+
+.button86:hover a {
+  color: white;
+}
+
+@media only screen and (max-width: 576px) {
+  .optForNftDev {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .image {
+    width: 100%;
+  }
+  .green_abstract_right {
+    top: 350px !important;
+    width: 142px;
+  }
+
+  .optForNftDev {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .title {
+    font-size: 40px;
+    line-height: 43px;
+    margin-bottom: 12px;
+  }
+  .optForNftDev {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .green_abstract_right {
+    top: 150px !important;
+    width: 132px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .green_abstract_right {
+    opacity: 0.2;
+  }
+
+  .green_abstract_left {
+    opacity: 0.2;
+  }
+}

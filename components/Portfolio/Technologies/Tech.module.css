@@ -1,0 +1,34 @@
+.tech_item_container {
+  background: #ffffff;
+  border: 1px solid #e9e9ea;
+  box-shadow: -4px -4px 0px #1caf83;
+  border-radius: 7px;
+}
+
+.tech_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.tech_item img {
+  /* width: 100%; */
+}
+
+.tech_item_name {
+  padding-top: 16px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #222429;
+}
+
+@media only screen and (max-width: 900px) {
+  .tech_item_name {
+  }
+}

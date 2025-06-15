@@ -1,0 +1,159 @@
+.benefitsOfNft {
+  position: relative;
+}
+
+.benefitNFtContainer {
+  /* margin-top: 60px; */
+  /* margin-bottom: 60px; */
+}
+
+.title {
+  font-family: "Teko";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 63px;
+  color: #222429;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #383a3e;
+}
+
+.benefitNFtCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.singleCard {
+  border: 1px solid #200e32;
+  padding: 20px;
+  border-radius: 11px;
+  box-shadow: -8px -8px 0px #200e32;
+  z-index: 100;
+  background: white;
+}
+
+.imageDiv {
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-family: "Teko";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #222429;
+  margin-bottom: 10px;
+}
+
+.cardText {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #383a3e;
+}
+
+.green_abstract_right {
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  position: absolute;
+  right: 0;
+  top: 400px !important;
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+.green_abstract_left {
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  position: absolute;
+  left: 0;
+  top: 200px !important;
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 576px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .benefitNFtCardContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px 10px;
+    margin-top: 20px;
+  }
+  .green_abstract_left {
+    top: 600px !important;
+    width: 136px;
+  }
+  .green_abstract_right {
+    top: 1050px !important;
+    width: 136px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .title {
+    font-size: 40px;
+    line-height: 43px;
+    margin-bottom: 12px;
+  }
+  .benefitNFtCardContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .green_abstract_left {
+    top: 400px !important;
+    width: 136px;
+  }
+  .green_abstract_right {
+    top: 800px !important;
+    width: 136px;
+  }
+  .benefitNFtContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .green_abstract_right {
+    top: 600px !important;
+    width: 136px;
+  }
+  .green_abstract_left {
+    top: 200px !important;
+    width: 136px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .green_abstract_right {
+    opacity: 0.2;
+  }
+
+  .green_abstract_left {
+    opacity: 0.2;
+  }
+}

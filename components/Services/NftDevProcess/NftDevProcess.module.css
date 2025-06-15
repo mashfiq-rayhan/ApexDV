@@ -1,0 +1,152 @@
+.nftDevProcess {
+  margin: 60px 0px;
+  padding: 60px 0px;
+  background: #fafafa;
+  position: relative;
+}
+
+.title {
+  font-family: "Teko";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 63px;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 60px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  /* margin-bottom: 30px; */
+}
+
+.cardContainer2 {
+  display: flex;
+  justify-content: center;
+  padding: 0px 300px;
+  margin-top: 30px;
+}
+
+.singleCard {
+  border: 1px solid #222429;
+  box-shadow: 0px 4px 0px #200e32;
+  border-radius: 10px;
+  /* margin-bottom: 30px; */
+  padding: 30px;
+  background-color: white;
+}
+
+.cardTitle {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #222429;
+  margin-bottom: 20px;
+}
+
+.cardText {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #383a3e;
+  margin-bottom: 0px;
+}
+
+.imageDiv {
+  margin-bottom: 16px;
+}
+
+.green_abstract_right {
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  position: absolute;
+  right: 0;
+  top: 1000px !important;
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+.green_abstract_left {
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  position: absolute;
+  left: 0;
+  top: 150px !important;
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 576px) {
+  .nftDevProcess {
+    margin: 20px 0px;
+    padding: 20px 0px;
+    background: #fafafa;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .cardContainer2 {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+  .nftDevProcess {
+    margin: 20px 0px;
+    padding: 20px 0px;
+    background: #fafafa;
+  }
+  .cardContainer2 {
+    padding: 0px 180px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 40px;
+  }
+  .nftDevProcess {
+    margin: 20px 0px;
+    padding: 20px 0px;
+    background: #fafafa;
+  }
+  .cardContainer2 {
+    padding: 0px 250px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .green_abstract_right {
+    opacity: 0.2;
+  }
+
+  .green_abstract_left {
+    opacity: 0.2;
+  }
+}

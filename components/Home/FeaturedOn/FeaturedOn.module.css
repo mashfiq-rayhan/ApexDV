@@ -1,0 +1,62 @@
+.featuredOn{
+    background-color: #f1f1f1;
+    padding: 50px 0px;
+}
+
+
+.featuredOnMobileMain{
+    display: none !important;
+}
+
+.featuredOn h3{
+    font-size: 64px;
+    line-height: 63px;
+    font-family: "Teko";
+    font-weight: 400;
+    text-align: center;
+    color: #222429;
+    margin-bottom: 0px;
+}
+
+
+.featuredOnMain{   
+    margin: 0 auto;
+}
+
+
+.featuredOnLogo{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0px;
+    align-items: center;    
+}
+
+
+.featuredCard img{
+    opacity: 0.6;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .featuredOnMobileMain{
+        display: block !important;
+    }
+
+    .featuredOnLogo{
+        display: none;
+    }
+
+    .featuredOn h3{
+        font-size: 32px;
+        line-height: 40px;
+        font-family: "Teko";
+        font-weight: 400;
+        text-align: center;
+        color: #222429;
+        margin-bottom: 0px;
+    }
+
+    
+}

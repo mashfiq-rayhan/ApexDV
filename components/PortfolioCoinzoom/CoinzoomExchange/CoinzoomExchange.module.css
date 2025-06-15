@@ -1,0 +1,91 @@
+.CoinzoomExchange {
+  position: relative;
+}
+
+.CoinzoomExchangeWrapper {
+  text-align: center;
+  padding: 50px 0px;
+  background-image: url("../../../public/images/Portfolio\ Details\ Coinzoom/Group 3251 1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.CoinzoomExchangeWrapper h1 {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 63px;
+  text-align: center;
+}
+
+.CoinzoomExchangeWrapper h1 span {
+  color: #1caf83;
+}
+
+.CoinzoomExchangeWrapper h6 {
+  max-width: 635px;
+  margin: 0 auto;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #4e5054;
+}
+
+.CoinzoomExchangeWrapper div {
+  margin-top: 50px;
+}
+
+.CoinzoomExchangeWrapper div p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #646669;
+  max-width: 282px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.green_abstract_left {
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  position: absolute;
+  left: 0;
+
+  top: 39% !important;
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+.green_abstract_right {
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  position: absolute;
+  right: 0;
+  top: 39% !important;
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .green_abstract_right {
+    opacity: 0.2;
+  }
+
+  .green_abstract_left {
+    opacity: 0.2;
+  }
+}

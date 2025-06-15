@@ -1,0 +1,551 @@
+.quote {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 10px;
+  gap: 10px;
+  position: fixed;
+  width: 162px;
+  height: 55px;
+  right: -50px !important;
+  top: calc(50% - 56px / 2 + 19px) !important;
+  background: #1caf83;
+  transform: rotate(-90deg);
+  background-attachment: fixed;
+  /* position: -webkit-sticky; */
+  font-size: 18px;
+  z-index: 99999999;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.LookingForSection {
+  width: 60% !important;
+  margin: 0 auto;
+  margin-top: 60px !important;
+  outline: 0px !important;
+  height: 600px !important;
+}
+
+.FromSection::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.FromSection::-webkit-scrollbar {
+  width: 4px;
+  background-color: #fafafa;
+  padding-left: 20px;
+  width: 8px;
+}
+
+.FromSection::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #1caf83;
+}
+
+.button86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button86::after,
+.button86::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.button86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #1caf83;
+  border: 1px solid #1caf83;
+  border-radius: 50px;
+}
+
+.button86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  border-radius: 50px;
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.4) 0%, rgba(26, 26, 26, 0.4) 100%);
+  backdrop-filter: blur(3px);
+}
+
+.button86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+  background-color: #1caf83;
+  color: white;
+}
+
+.button86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.4) 0%, rgba(26, 26, 26, 0.4) 100%);
+  backdrop-filter: blur(6px);
+}
+
+.button86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+.button86 a {
+  color: white;
+  font-family: "Rubik";
+}
+
+.button86:hover a {
+  color: white;
+}
+
+.formText {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #1caf83 !important;
+}
+
+.accordion_header {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1a1a1a;
+}
+
+.fullCycleDevTeamImgDiv {
+  width: 50%;
+}
+/* .fullCycleDevTeamInfo {
+    width: 100%;
+  } */
+
+@keyframes show {
+  0% {
+    bottom: 800px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+/* Looking For Job Section Css */
+
+/* .LookingFor {
+    display: flex;
+    width: 960px !important;
+    background-color: #222429;    
+    margin-left: 0px;
+  } */
+
+.JobSection {
+  background-color: #222429;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.JobSectionImage {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+}
+
+.JobSectionTitle {
+  background: linear-gradient(269.9deg, rgba(40, 53, 65, 0.2) 1.02%, rgba(40, 53, 65, 0.2) 99.11%);
+  backdrop-filter: blur(13px);
+  border-radius: 10px 10px 0px 0px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.JobSectionTitle h3 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Teko";
+  line-height: 40px;
+  text-align: center;
+}
+
+.JobSectionTitle h3 span {
+  color: #1caf83;
+}
+
+.JobSection h2 {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Teko";
+  margin-top: 30px;
+}
+
+.applyText {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Rubik";
+  color: #1caf83;
+  margin-top: 50px;
+}
+
+.JobSectionText {
+  background-color: #1caf83;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Rubik";
+  color: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.FromSection {
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+  height: 530px;
+  padding: 30px 30px;
+  overflow-x: hidden;
+}
+
+.JobSectionClose {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+.JobSectionClose img {
+  cursor: pointer;
+}
+
+.FromSection p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  font-family: "Rubik";
+  color: #222429;
+  margin-bottom: 20px;
+}
+
+.contact_form {
+  background-color: white;
+  padding: 30px;
+}
+
+.form_group {
+  margin-bottom: 7px;
+}
+
+.form_input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: 0px;
+}
+
+.form_input:focus-visible {
+  border: 1px solid #1caf83 !important;
+}
+
+.formTitle {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #222429;
+}
+
+.form_label {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  display: block;
+  color: #222429;
+}
+
+.quickContact {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #222429;
+  background-color: white;
+  padding: 8px 0px;
+}
+
+.phoneIcon {
+  color: #1caf83;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.phoneNumber {
+  margin-bottom: 16px;
+}
+
+.phoneDiv {
+  margin-top: 34px;
+}
+
+.button {
+  all: unset;
+  width: 90%;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button::after,
+.button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.button::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #1caf83;
+  border: 1px solid #1caf83;
+  border-radius: 50px;
+}
+
+.button::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  border-radius: 50px;
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.4) 0%, rgba(26, 26, 26, 0.4) 100%);
+  backdrop-filter: blur(3px);
+}
+
+.button:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+  background-color: #1caf83;
+  color: white;
+}
+
+.button:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.4) 0%, rgba(26, 26, 26, 0.4) 100%);
+  backdrop-filter: blur(6px);
+}
+
+.button:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+.button a {
+  color: white;
+  font-family: "Rubik";
+}
+
+.button:hover a {
+  color: white;
+}
+
+@media only screen and (max-width: 576px) {
+  .fullCycleDevTeamImgDiv {
+    width: 100%;
+  }
+  .fullCycleDevTeam {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .fullCycleDevTeam {
+    margin: 0px 0px;
+  }
+  .accordion_header {
+    font-size: 24px;
+  }
+
+  .JobSectionImage {
+    margin-top: 0px;
+  }
+
+  .LookingForSection {
+    width: 80% !important;
+    flex-direction: column-reverse;
+  }
+
+  .JobSectionImage {
+    margin-top: 0px;
+  }
+
+  .JobSectionTitle {
+    width: 100% !important;
+  }
+
+  .JobSectionText {
+    width: 100% !important;
+  }
+
+  .JobSection {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .fullCycleDevTeamImgDiv {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .fullCycleDevTeamInfo {
+    width: 100%;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .fullCycleDevTeam {
+    margin: 0px 0px;
+  }
+  .accordion_header {
+    font-size: 24px;
+  }
+
+  .LookingForSection {
+    width: 80% !important;
+    flex-direction: column-reverse;
+    height: 650px !important;
+    overflow-y: scroll;
+    margin-top: 0px;
+  }
+
+  .FromSection {
+    overflow: hidden;
+    height: 540px !important;
+  }
+
+  .LookingForSection::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #fafafa;
+  }
+
+  .LookingForSection::-webkit-scrollbar {
+    width: 4px;
+    background-color: #fafafa;
+    padding-left: 20px;
+    width: 8px;
+  }
+
+  .LookingForSection::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #1caf83;
+  }
+
+  .JobSectionImage {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .fullCycleDevTeamImgDiv {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .LookingForSection {
+    width: 80% !important;
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .green_abstract_right {
+    opacity: 0.2;
+  }
+
+  .green_abstract_left {
+    opacity: 0.2;
+  }
+}

@@ -1,0 +1,193 @@
+.Awards {
+  position: relative;
+}
+
+.sliderImg {
+  width: 100%;
+  height: 300px;
+}
+
+.awardTitle {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222429;
+  width: 189px;
+}
+
+.awardP {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #4e5054;
+}
+
+.awardYear {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 63px;
+  color: #909194;
+}
+
+.green_abstract_right {
+  position: absolute;
+  right: 0.62%;
+  top: 69% !important;
+  background: #1caf83;
+  opacity: 0.35;
+  filter: blur(100px);
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+.green_abstract_left {
+  position: absolute;
+  left: 0.14%;
+  top: 44.33% !important;
+  background: #1caf83;
+  opacity: 0.35;
+  filter: blur(100px);
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+
+
+.awardYear::before {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: #e9e9ea;
+  bottom: 15px;
+  right: 105px;
+}
+
+.awardWrapper {
+  position: relative;
+  height: 215px;
+  padding-left: 10px;
+}
+
+.awardDetails {
+  padding: 20px;
+  background-color: black;
+  height: 215px;
+  color: white;
+}
+
+.awardDetails p {
+  font-size: 1.5rem;
+}
+
+.awardWrapper:hover {
+  background-color: black;
+}
+
+.awardWrapper:hover .awardTitle,
+.awardWrapper:hover .awardP {
+  color: white !important;
+}
+
+.rightBox {
+  left: 200px;
+  width: 396px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.leftBox {
+  right: 366px;
+  width: 396px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.awardWrapper:hover .rightBox {
+  animation: leftToRight 0.5s;
+  opacity: 1;
+  z-index: 1;
+  visibility: visible;
+}
+
+.awardWrapper:hover .leftBox {
+  animation: rightToLeft 0.5s;
+  opacity: 1;
+  z-index: 1;
+  visibility: visible;
+}
+
+@keyframes leftToRight {
+  0% {
+    left: 0px;
+    opacity: 0;
+  }
+  100% {
+    left: 200px;
+    opacity: 1;
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    right: 0px;
+    opacity: 0;
+  }
+  100% {
+    right: 366px;
+    opacity: 1;
+  }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .green_abstract_right {
+    opacity: 0.2;
+  }
+
+  .green_abstract_left {
+    opacity: 0.2;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+ 
+  .awardWrapper:hover .rightBox{
+      display: none !important;
+  }
+
+  .awardWrapper:hover .rightBox {
+    display: none;
+  }
+
+  .rightBox{
+    width: auto !important;   
+    left: 0px;
+  }
+
+  .leftBox{
+    width: auto !important;    
+    left: 0px;
+  }
+
+  .awardWrapper:hover{
+    display: none;
+    margin-top: 20px;
+  }
+
+  
+}

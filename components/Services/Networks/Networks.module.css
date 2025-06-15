@@ -1,0 +1,239 @@
+.networksMain {
+  position: relative;
+}
+
+.green_abstract_left {
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  position: absolute;
+  left: 0;
+  top: 750px !important;
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+.green_abstract_right {
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  position: absolute;
+  right: 0;
+  top: 300px !important;
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+.networks {
+  display: flex;
+  gap: 30px;
+  margin: 60px 0px;
+  height: 600px;
+  width: 98%;
+}
+
+.networksImgDiv {
+  /* width: 100%; */
+}
+
+.networksImg {
+  /* width: 50%; */
+}
+
+.title {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  color: #222429;
+  margin-bottom: 30px;
+}
+
+/* Scrollbar */
+.scrollbar {
+  margin-left: 30px;
+  height: 95%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.force_overflow {
+  /* min-height: 450px; */
+}
+
+#wrapper {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+.networksInfo {
+  width: 60%;
+}
+
+.scrollInfoCard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.scrollInfoCardImg {
+  width: 14%;
+}
+
+.scrollInfoCardInfo {
+  width: 100%;
+}
+
+.scrollInfoCardTitle {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #222429;
+}
+
+.scrollInfoCardText {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #383a3e;
+}
+
+#scrollbar_style::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+#scrollbar_style::-webkit-scrollbar {
+  width: 4px;
+  background-color: #fafafa;
+  padding-left: 20px;
+}
+
+#scrollbar_style::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #1caf83;
+}
+
+.scrollInfo {
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .networksImgDiv {
+    width: 100%;
+  }
+  .networks {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+  .scrollbar {
+    margin-left: 0px;
+    height: 70%;
+    width: 100%;
+    overflow: visible;
+  }
+  .networksInfo {
+    width: 85%;
+  }
+  .scrollInfo {
+    width: 110%;
+  }
+  .scrollInfoCardImg {
+    width: 33%;
+  }
+  .scrollInfoCardTitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .scrollInfoCardText {
+    line-height: 28px;
+    font-size: 16px;
+  }
+  .networks {
+    height: 1500px;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .networks {
+    height: 1650px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .networksImgDiv {
+    width: 45%;
+    margin-top: 20px;
+  }
+  .fullCycleDevTeamInfo {
+    width: 100%;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .networksInfo {
+    padding-right: 20px;
+    height: 600px;
+  }
+  .scrollInfoCardImg {
+    margin-right: 20px;
+  }
+  .networks {
+    gap: 0px;
+    margin: 0px 0px;
+  }
+  .scrollInfo {
+    padding-right: 10px;
+  }
+  .title {
+    line-height: 40px;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .networksInfo {
+    padding-right: 20px;
+    height: 600px;
+  }
+  .scrollInfoCardImg {
+    margin-right: 20px;
+  }
+  .scrollbar {
+    padding-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .green_abstract_right {
+    opacity: 0.2;
+  }
+
+  .green_abstract_left {
+    opacity: 0.2;
+  }
+}

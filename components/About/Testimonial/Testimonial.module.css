@@ -1,0 +1,51 @@
+.testimonialWrapper {
+  height: 700px;
+  background-image: url("../../../public/images/AboutUs/Reviews.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 350px;
+}
+
+.TestimonialCard {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.TestimonialCard h3 {
+  font-family: "teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 36px;
+  color: #222429;
+}
+
+.TestimonialCard div div h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  color: #222429;
+}
+
+.TestimonialCard div div h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 125%;
+  color: #4e5054;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .TestimonialCard{
+    padding: 0px 30px;
+  }
+
+  .testimonialWrapper{
+    padding-top: 220px;
+  }
+}

@@ -1,0 +1,115 @@
+.quickContact {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 40px;
+  text-align: center;
+  color: #222429;
+  background-color: white;
+  padding: 8px 0px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.phoneIcon {
+  color: #1caf83;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.phoneNumber {
+  margin-bottom: 16px;
+}
+
+.phoneDiv {
+  margin-top: 34px;
+}
+
+.phoneIcon > svg > path {
+  display: block;
+}
+
+.addressDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+  grid-gap: 40px;
+  padding: 0px 300px;
+}
+
+.addressContainer {
+  padding: 40px;
+  transition: 0.4s linear;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 5%);
+  border-radius: 10px;
+}
+
+.addressContainer h1 {
+  font-family: "Teko";
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.addressContainer p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #222429;
+}
+
+.addressContainer:hover {
+  background-color: #1caf83;
+  border-radius: 10px;
+}
+
+.addressContainer:hover h1 {
+  color: white;
+}
+
+.addressContainer:hover p {
+  color: white;
+}
+
+@media only screen and (max-width: 576px) {
+  .addressDiv {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+    grid-gap: 30px;
+    padding: 0px 0px;
+  }
+  .quickContact {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .addressDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    grid-gap: 20px;
+    padding: 0px 0px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .addressDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    grid-gap: 40px;
+    padding: 0px 0px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+  .addressDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    grid-gap: 40px;
+    padding: 0px 100px;
+  }
+}

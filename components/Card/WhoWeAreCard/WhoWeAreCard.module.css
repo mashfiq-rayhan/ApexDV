@@ -1,0 +1,84 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    isolation: isolate;
+    transition: 0.5s;
+    width: 680px;
+    height: 188px;
+    margin-bottom: 45px;
+    background: #fafafa;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card:hover {
+    background: #1caf83;
+    /* Primary Color/ DARK MOUNTAIN MEADOW */
+    color: #fafafa;
+    border: 1px solid #1caf83;
+    border-radius: 10px;
+}
+
+.card:hover h6 {
+    /* Primary Color/ DARK MOUNTAIN MEADOW */
+    color: #fafafa;
+}
+
+.card h6 {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #222429;
+    margin-top: 15px;
+}
+
+.card .cardImg {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 20px;
+    top: -33px;
+    /* Text Color/ white */
+    background: #ffffff;
+    border-radius: 22px;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.card:hover .cardImg::after {
+    position: absolute;
+    content: " ";
+    width: 64px;
+    height: 64px;
+    left: 0px;
+    bottom: -12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../../../public/images/LandingPage/Who\ we\ are/Vector 4.svg");
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card {
+      margin: 30px 20px;
+    }
+  
+  }
+
+
+  @media only screen and (min-width: 1240px) and (max-width: 1440px) {
+    .card {
+        width: 600px;
+      }
+  }

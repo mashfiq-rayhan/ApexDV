@@ -1,0 +1,219 @@
+.proceed {
+  position: relative;
+}
+
+.green_abstract_right {
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  position: absolute;
+  right: 0;
+  top: 65% !important;
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+.green_abstract_left {
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  position: absolute;
+  left: 0;
+  top: 20% !important;
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+.title {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 63px;
+  color: #222429;
+}
+
+.proceedContainerTitle {
+  width: 50%;
+}
+
+.proceedContainer {
+  display: flex;
+  width: 98%;
+}
+
+/* Scrollbar */
+.scrollbar {
+  margin-left: 30px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.force_overflow {
+  height: 600px;
+}
+
+#wrapper {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+.networksInfo {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.scrollInfoCard {
+  display: flex;
+  /* align-items: center; */
+  margin-bottom: 30px;
+}
+
+.scrollInfoCardImg {
+  /* width: 14%; */
+}
+
+.scrollInfoCardP {
+  background-color: #1caf83;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  color: white;
+}
+
+.scrollInfoCardInfo {
+  width: 100%;
+  padding-right: 20px;
+}
+
+.scrollInfoCardTitle {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #222429;
+  margin-bottom: 16px;
+}
+
+.scrollInfoCardDays {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #4e5054;
+  margin-bottom: 20px;
+}
+
+.scrollInfoCardText {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #383a3e;
+  margin-bottom: 16px;
+}
+
+#scrollbar_style2::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  border-radius: 10px;
+  background-color: white;
+}
+
+#scrollbar_style2::-webkit-scrollbar {
+  width: 4px;
+  background-color: white;
+  padding-left: 20px;
+}
+
+#scrollbar_style2::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  background-color: white;
+}
+
+.scrollInfo {
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .title {
+    font-family: "Teko";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #222429;
+  }
+  .proceedContainer {
+    display: flex;
+    flex-direction: column;
+    height: 2400px;
+  }
+  .networksInfo {
+    /* width: 0px; */
+    margin-top: 20px;
+  }
+  .scrollbar {
+    overflow: visible;
+  }
+  .proceedContainerTitle {
+    width: 100%;
+  }
+  .scrollInfoCardTitle {
+    font-size: 24px;
+  }
+  .scrollInfoCardP {
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .title {
+    font-family: "Teko";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #222429;
+  }
+
+  .proceedContainerTitle {
+    width: 53%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 424px) {
+  .proceedContainer {
+    display: flex;
+    flex-direction: column;
+    height: 2740px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 376px) {
+  .proceedContainer {
+    display: flex;
+    flex-direction: column;
+    height: 2740px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .proceedContainer {
+    display: flex;
+    flex-direction: column;
+    height: 3300px;
+  }
+}

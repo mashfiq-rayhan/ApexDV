@@ -1,0 +1,72 @@
+.card:nth-child(1) {
+  text-align: center;
+  padding: 35px 20px;
+  background: #2d72fc;
+  border-bottom-right-radius: 20px;
+}
+
+.card:nth-child(2) {
+  text-align: center;
+  padding: 35px 0px 0px;
+  background: #a34e3c;
+  border-bottom-left-radius: 20px;
+}
+
+.card:nth-child(3) {
+  text-align: center;
+  padding: 35px 20px;
+
+  background: #28bbf8;
+  border-bottom-left-radius: 20px;
+}
+
+.card img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.card:nth-child(2) img {
+  border-bottom-left-radius: 20px;
+}
+
+.card h2 {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: "Teko";
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Rubik";
+  line-height: 28px;
+  text-align: center;
+  color: #e9e9ea;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 425px) {
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .card:nth-child(1) {
+    padding: 20px 20px;
+  }
+
+  .card:nth-child(2) {
+    padding: 20px 20px;
+  }
+
+  .card:nth-child(3) {
+    padding: 20px 20px;
+  }
+
+  .card h2 {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}

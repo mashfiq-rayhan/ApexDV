@@ -1,0 +1,570 @@
+/* Hero  Section and website Design Section */
+.heroSection {
+  background-color: #100d1e;
+  padding: 50px 0px;
+}
+
+.paraSwapApps h1 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 63px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Teko";
+}
+
+.paraSwapApps h1 span {
+  color: #4b86ff;
+  display: block;
+}
+
+.paraSwapApps p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Rubik";
+  line-height: 28px;
+  text-align: center;
+  color: #bdbdbf;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* CSS */
+.button {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: auto;
+}
+
+.button::after,
+.button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.button::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid #4e92f9;
+  border-radius: 50px;
+}
+
+.button::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  border-radius: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  backdrop-filter: blur(3px);
+}
+
+.button:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+  background-color: #4e92f9;
+  color: white;
+}
+
+.button:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 26, 26, 0.4) 0%,
+    rgba(26, 26, 26, 0.4) 100%
+  );
+  backdrop-filter: blur(6px);
+}
+
+.button:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+.button a {
+  color: #4e92f9;
+  font-family: "Rubik";
+}
+
+.button:hover a {
+  color: white;
+}
+
+.heroImage {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.heroImage img {
+  width: 100%;
+}
+
+.paraSwapMobile {
+  margin-top: 100px;
+}
+
+.paraSwapMobile h1 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 63px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Teko";
+}
+
+.paraSwapMobile p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Rubik";
+  line-height: 28px;
+  text-align: center;
+  color: #bdbdbf;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.paraSwapMobileText {
+  background-color: #16243a;
+  padding: 55px 30px 0px;
+}
+
+.paraSwapMobileText h3 {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Teko";
+  line-height: 32px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 0px;
+}
+
+.paraSwapMobileText p {
+  font-size: 17.5px;
+  font-weight: 400;
+  font-family: "Rubik";
+  line-height: 28px;
+  text-align: left;
+  color: #e9e9ea;
+  margin-bottom: 20px;
+}
+
+.paraSwapMobileImage img {
+  width: 100%;
+}
+
+.PortfolioResults {
+  height: 1050px;
+  overflow: hidden;
+  position: relative;
+}
+
+.PortfolioResultsBanner {
+  position: absolute;
+  top: 90px;
+  right: 0px;
+}
+
+.TopShadow {
+  position: absolute;
+  right: 7.62%;
+  top: 31% !important;
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+.BottomShadow {
+  position: absolute;
+  left: 0.14%;
+  top: 79.33% !important;
+  background: #1caf83;
+  opacity: 0.4;
+  filter: blur(100px);
+  width: 182px;
+  max-width: 100%;
+  height: 133.35px;
+  z-index: 1;
+}
+
+/* .PortfolioResultsDetails {
+  background: url("/images/Portfolio\ Details\ Paraswap/Rectangle 4.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 550px 0px;
+  position: relative;
+} */
+
+.PortfolioResultsDetails::before {
+  content: "";
+  width: 200%;
+  height: 60%;
+  position: absolute;
+  left: 0;
+  top: 370px;
+  transform: translateX(-25%) rotate(20deg);
+  background-color: #fafafa;
+  /* margin-bottom: 100px; */
+}
+
+.PortfolioResultsDetailsCards {
+  /* display: flex; */
+  /* align-items: center; */
+  /* align-content: center; */
+  /* transform: rotate(20deg); */
+  /* margin-top: 300px; */
+  transform: rotate(20deg);
+  margin-top: 625px;
+}
+
+.PortfolioResultsDetails h1 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 63px;
+  text-align: left;
+  color: #222429;
+  font-family: "Teko";
+  /* transform: rotate(358deg); */
+  position: absolute;
+  top: 400px;
+  left: 336px;
+}
+
+.PortfolioResultsCardContainer {
+  display: flex;
+  /* align-items: flex-start; */
+  justify-content: center;
+}
+
+.PortfolioResults .PortfolioResultsCard1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(340deg);
+  /* margin-bottom: 450px; */
+  width: 33.33%;
+}
+
+.PortfolioResults .PortfolioResultsCard2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(340deg);
+  /* margin-bottom: 50px; */
+  width: 26%;
+}
+
+.PortfolioResults .PortfolioResultsCard3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(340deg);
+  /* margin-bottom: -400px; */
+  width: 26%;
+}
+
+.PortfolioResultsCard1 h3,
+.PortfolioResultsCard2 h3,
+.PortfolioResultsCard3 h3 {
+  font-size: 32px;
+  font-family: "Teko";
+  font-weight: 400;
+  line-height: 40px;
+  color: #222429;
+  /* width: 220px; */
+  margin-left: 30px;
+}
+
+/* Low resolution Tablets and iPads */
+@media (min-width: 1530px) and (max-width: 3000px) {
+  .paraSwapMobileText p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .paraSwapMobileText h3 {
+    margin-top: 40px !important;
+  }
+
+  .PortfolioResultsDetails h1 {
+    left: 150px;
+  }
+}
+
+/* Laptops and Desktops */
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .PortfolioResultsDetails h1 {
+    left: 102px;
+  }
+}
+
+/* Laptops and Desktops */
+@media (min-width: 820px) and (max-width: 1180px) {
+  .paraSwapMobileText p {
+    margin: 0px;
+    font-size: 15px;
+  }
+}
+
+/* Low resolution Tablets and iPads */
+/* @media (max-width: 576px) { */
+@media (min-width: 481px) and (max-width: 770px) {
+  .paraSwapMobileImage img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+
+  .PortfolioResultsDetails h1 {
+    left: 20px;
+    top: 460px;
+  }
+
+  .PortfolioResultsBanner {
+    top: 80px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .PortfolioResultsDetails h1 {
+    left: 20px;
+    top: 360px;
+  }
+
+  .PortfolioResultsBanner {
+    top: 50px;
+  }
+
+  .PortfolioResultsDetails {
+    padding: 450px 0px;
+  }
+}
+
+/* Low resolution Mobile */
+@media (max-width: 480px) {
+  .PortfolioResultsCard1 img,
+  .PortfolioResultsCard2 img,
+  .PortfolioResultsCard3 img {
+    width: 30px;
+  }
+
+  .PortfolioResultsCard1 h3,
+  .PortfolioResultsCard2 h3,
+  .PortfolioResultsCard3 h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 15px;
+  }
+
+  .PortfolioResultsDetails h1 {
+    font-size: 32px;
+    line-height: 40px;
+    left: 30px;
+    top: 390px;
+  }
+  .PortfolioResultsDetails::before {
+    height: 35%;
+  }
+  .PortfolioResultsDetailsCards {
+    margin-top: 466px;
+  }
+
+  .PortfolioResults .PortfolioResultsCard1 {
+    width: 33% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .PortfolioResults .PortfolioResultsCard3 {
+    width: 33% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .PortfolioResults .PortfolioResultsCard2 {
+    width: 33% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .PortfolioResultsCard1 img,
+  .PortfolioResultsCard2 img,
+  .PortfolioResultsCard3 img {
+    width: 56px;
+  }
+  .PortfolioResultsCard1 h3,
+  .PortfolioResultsCard2 h3,
+  .PortfolioResultsCard3 h3 {
+    margin-left: 10px;
+  }
+  .PortfolioResults {
+    height: 950px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .paraSwapMobileImage img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  .PortfolioResultsDetails h1 {
+    left: 20px;
+    top: 460px;
+  }
+  .PortfolioResultsBanner {
+    top: 80px;
+  }
+  .PortfolioResultsDetailsCards {
+    transform: rotate(20deg);
+    margin-top: 550px;
+  }
+  .PortfolioResultsDetails::before {
+    height: 50%;
+  }
+  .PortfolioResultsCard1 img,
+  .PortfolioResultsCard2 img,
+  .PortfolioResultsCard3 img {
+    width: 70px;
+  }
+  .PortfolioResultsCard1 h3,
+  .PortfolioResultsCard2 h3,
+  .PortfolioResultsCard3 h3 {
+    margin-left: 10px;
+  }
+  .PortfolioResultsCard1 {
+    width: 33% !important;
+  }
+  .PortfolioResultsCard2 {
+    width: 33% !important;
+  }
+  .PortfolioResultsCard3 {
+    width: 33% !important;
+  }
+  .PortfolioResultsDetails h1 {
+    left: 33px;
+    top: 417px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .PortfolioResultsDetails h1 {
+    left: 20px;
+    top: 360px;
+  }
+  .PortfolioResultsBanner {
+    top: 50px;
+  }
+  .PortfolioResultsDetails {
+    padding: 450px 0px;
+  }
+  .PortfolioResultsDetailsCards {
+    transform: rotate(20deg);
+    margin-top: 94px;
+  }
+  .PortfolioResultsDetails::before {
+    height: 50%;
+  }
+  .PortfolioResultsCard1 {
+    width: 34% !important;
+  }
+  .PortfolioResultsCard2 {
+    width: 34% !important;
+  }
+  .PortfolioResultsCard3 {
+    width: 34% !important;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .PortfolioResultsDetails h1 {
+    left: 206px;
+  }
+  .PortfolioResultsCard3 {
+    width: 28% !important;
+  }
+
+  .paraSwapMobile {
+    margin-top: 30px;
+  }
+
+  .paraSwapApps h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 0px;
+  }
+
+  .paraSwapMobile h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 0px;
+  }
+
+  .paraSwapMobileImage {
+    background-color: #16243a;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .paraSwapMobileImage img {
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .TopShadow {
+    right: 18.62%;
+
+    top: 23% !important;
+  }
+
+  .BottomShadow {
+    top: 80% !important;
+    left: 21.14%;
+  }
+}

@@ -1,0 +1,98 @@
+/* .green_abstract_right {
+    position: absolute;
+    right: 0.62%;
+    top: 1150px !important;
+    background: #1caf83;
+    opacity: 0.14;
+    filter: blur(100px);
+    width: 182px;
+    max-width: 100%;
+    height: 133.35px;
+    z-index: 1;
+  }
+  
+  .green_abstract_left {
+      position: absolute;
+      top: 1150px;
+      left: 0px;
+      width: 90px;
+      height: 70px;
+      background-color: #1CAF83;
+      border-radius: 150px;
+      filter: blur(60px);
+      opacity: .54px;
+  }
+
+  @media (max-device-width : 1200px) { 
+    .green_abstract_right { top: 2000px !important;}
+    .green_abstract_left { top: 2000px !important;}
+  } */
+
+.featuredOn{
+    background-color: #f1f1f1;
+    padding: 50px 0px;
+}
+
+
+.featuredOnMobileMain{
+    display: none !important;
+}
+
+.featuredOn h3{
+    font-size: 64px;
+    line-height: 63px;
+    font-family: "Teko";
+    font-weight: 400;
+    text-align: center;
+    color: #1caf83;
+    margin-bottom: 0px;
+}
+
+
+.featuredOnMain{   
+    margin: 0 auto;
+}
+
+
+.featuredOnLogo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    align-items: center;
+   
+}
+
+
+.featuredCard img{
+    width: 50%;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .featuredOnMobileMain{
+        display: block !important;
+    }
+
+    .featuredOnLogo{
+        display: none;
+    }
+
+    .featuredOn h3{
+        font-size: 32px;
+        line-height: 40px;
+        font-family: "Teko";
+        font-weight: 400;
+        text-align: center;
+        color: #1caf83;
+        margin-bottom: 0px;
+    }
+    .featuredOnMobile img{
+      width: 150px;
+      cursor: pointer;
+      height: 150px;
+      margin-right: 0px;
+  }
+
+    
+} 
