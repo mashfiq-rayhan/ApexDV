@@ -10,6 +10,7 @@ import PortfolioResultsDetails from "../components/PortfolioDetails/ParaswapDeta
 import ContactUsForm from "../components/Services/ContactUsForm/ContactUsForm";
 import Foot from "../components/Home/Foot/Foot";
 import Footer from "../components/shared/Footer/Footer";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (

@@ -3,6 +3,7 @@ import ContactUs from "../components/ContactUs/ContactUs";
 import Offices from "../components/ContactUs/Offices";
 import Foot from "../components/Home/Foot/Foot";
 import Navbar from "../components/shared/Navbar/Navbar";
+import styles from "../styles/Home.module.css";
 
 const contact = () => {
   return (

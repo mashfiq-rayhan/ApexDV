@@ -10,6 +10,7 @@ import Proceed from "../components/Portfolio/Proceed/Proceed";
 import NoStress from "../components/Portfolio/NoStress/NoStress";
 import ContactUsForm from "../components/Services/ContactUsForm/ContactUsForm";
 import Foot from "../components/Home/Foot/Foot";
+import styles from "../styles/Home.module.css";
 
 export default function Portfolio() {
   return (

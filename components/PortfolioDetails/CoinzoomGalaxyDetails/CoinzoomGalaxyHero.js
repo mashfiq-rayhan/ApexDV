@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import styles from "../../../styles/Home.module.css";
 
 const CoinzoomGalaxyHero = () => {
   const heroData = {
@@ -7,8 +8,7 @@ const CoinzoomGalaxyHero = () => {
     text: "A collaborative credential infrastructure that empowers brands to build better communities and products in Web3",
     btnText: "Explore site",
     btnHref: "/",
-    heroImage:
-      "images/Portfolio Details Coinzoom Project Galaxy/Group 3249 1 1.svg",
+    heroImage: "images/Portfolio Details Coinzoom Project Galaxy/Group 3249 1 1.svg",
     logo: "images/Portfolio Details Coinzoom Project Galaxy/image 480.svg",
   };
   return (

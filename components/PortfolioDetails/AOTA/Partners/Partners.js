@@ -18,10 +18,8 @@
 
 // export default Partners;
 
-
-
-
 import React from "react";
+import styles from "../../../../styles/Home.module.css";
 
 const Partners = () => {
   const featuredData = [
@@ -40,7 +38,7 @@ const Partners = () => {
     {
       id: 4,
       img: "/images/Portfolio Details AOTA/Brangerine.svg",
-    }
+    },
   ];
 
   return (

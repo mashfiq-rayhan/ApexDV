@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import styles from "../../../styles/Home.module.css";
 
 const LunaDetailsHero = () => {
   const heroData = {
@@ -16,8 +17,7 @@ const LunaDetailsHero = () => {
       <div className={styles.green_abstract_left}></div>
 
       <div className="container">
-        <div
-          className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${styles.lunaDetailsHeroContainer}`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${styles.lunaDetailsHeroContainer}`}>
           <div className={styles.coinzoomGalaxyImg}>
             <img src={heroData.heroImage} alt="" />
           </div>

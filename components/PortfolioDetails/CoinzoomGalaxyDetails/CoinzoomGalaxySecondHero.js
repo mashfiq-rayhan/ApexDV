@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import styles from "../../../styles/Home.module.css";
 
 const CoinzoomGalaxySecondHero = () => {
   const heroData = {
@@ -8,8 +9,7 @@ const CoinzoomGalaxySecondHero = () => {
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci porttitor amet, dui convallis purus tincidunt bibendum.",
     btnText: "Explore site",
     btnHref: "/",
-    heroImage:
-      "images/Portfolio Details Coinzoom Project Galaxy/Group 3305.svg",
+    heroImage: "images/Portfolio Details Coinzoom Project Galaxy/Group 3305.svg",
   };
   return (
     <div className={styles.coinzoomGalaxySecondHero}>

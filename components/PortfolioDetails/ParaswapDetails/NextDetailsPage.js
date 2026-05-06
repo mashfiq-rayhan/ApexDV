@@ -1,70 +1,62 @@
-import React from 'react';
-import NextDetailsItam from '../../Card/NextDetailsItam/NextDetailsItam';
+import React from "react";
+import NextDetailsItam from "../../Card/NextDetailsItam/NextDetailsItam";
+import styles from "../../../styles/Home.module.css";
 
 const NextDetailsPage = () => {
-    const nextDetailsHeader = {
-        header: "We're also proud of",        
-    }
+  const nextDetailsHeader = {
+    header: "We're also proud of",
+  };
 
- const nextDetailsData = [
+  const nextDetailsData = [
     {
-        id: 1,
-        title: "Paritex",
-        subtitle: "Web",
-        img: "/images/Portfolio Details Paraswap/image 481.svg",
-        href: "https://www.paritex.com/en",
+      id: 1,
+      title: "Paritex",
+      subtitle: "Web",
+      img: "/images/Portfolio Details Paraswap/image 481.svg",
+      href: "https://www.paritex.com/en",
     },
     {
-        id: 2,
-        title: "AOTA",
-        subtitle: "Web",
-        img: "/images/Portfolio Details Paraswap/Group 3246 2.svg",
-        href: "/",
+      id: 2,
+      title: "AOTA",
+      subtitle: "Web",
+      img: "/images/Portfolio Details Paraswap/Group 3246 2.svg",
+      href: "/",
     },
     {
-        id: 3,
-        title: "CoinZoom",
-        subtitle: "Web",
-        img: "/images/Portfolio Details Paraswap/Group 3246 1.svg",
-        href: "https://www.coinzoom.com/",    
-    }
-]
+      id: 3,
+      title: "CoinZoom",
+      subtitle: "Web",
+      img: "/images/Portfolio Details Paraswap/Group 3246 1.svg",
+      href: "https://www.coinzoom.com/",
+    },
+  ];
 
-    return (
-        <div className="NextDetailsPage">
-
-<div className={styles.TopShadow}>
-            </div>
-            <div className={styles.BottomShadow}>
-            </div>
-
+  return (
+    <div className="NextDetailsPage">
+      <div className={styles.TopShadow}></div>
+      <div className={styles.BottomShadow}></div>
 
       <div className="container mx-auto px-5">
         <div className="NextDetails">
-          <h2>            
-            {nextDetailsHeader.header}
-          </h2>         
-         
+          <h2>{nextDetailsHeader.header}</h2>
+
           <div className="nextDetailsData">
-          {
-                        nextDetailsData.map((details, i) => {
-                            return (
-                                <NextDetailsItam
-                                    key={details.id}
-                                    title={details.title}
-                                    subtitle={details.subtitle}
-                                    img={details.img}
-                                    href={details.href}
-                                />
-                            )
-                        })
-                    }
-         
-         </div>
+            {nextDetailsData.map((details, i) => {
+              return (
+                <NextDetailsItam
+                  key={details.id}
+                  title={details.title}
+                  subtitle={details.subtitle}
+                  img={details.img}
+                  href={details.href}
+                />
+              );
+            })}
+          </div>
         </div>
-        </div>
-        </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default NextDetailsPage;

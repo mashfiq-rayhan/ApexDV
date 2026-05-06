@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import styles from "../../../styles/Home.module.css";
 
 export default function ParitexHero() {
   return (
-    <div
-      className={`grid grid-cols-1 md:grid-cols-12 gap-5 ${styles.hero_container}`}>
+    <div className={`grid grid-cols-1 md:grid-cols-12 gap-5 ${styles.hero_container}`}>
       <div className="md:col-span-7">
         <div className={styles.hero_image}>
           <img src="/images/PortfolioDetailsParitex/hero.svg" />

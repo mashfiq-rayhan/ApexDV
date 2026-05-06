@@ -1,11 +1,11 @@
 import React from "react";
+import styles from "../../../styles/Home.module.css";
 
 const BlogSubFooter = () => {
   return (
     <div className="bg-[#E9E9EA] py-[60px]">
       <div className="container mx-auto px-5">
-        <div
-          className="grid grid-cols-1 md:grid-cols-4 gap-4 max-md:text-center">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-md:text-center">
           <div>
             <h3>Services</h3>
             <a href="">

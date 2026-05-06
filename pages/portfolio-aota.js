@@ -9,12 +9,11 @@ import PortfolioResultsDetails from "../components/PortfolioDetails/ParaswapDeta
 import Footer from "../components/shared/Footer/Footer";
 import ContactUsForm from "../components/Services/ContactUsForm/ContactUsForm";
 import Foot from "../components/Home/Foot/Foot";
-
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-
       <Head>
         <title>Portfolio AOTA</title>
         <meta name="description" content="ApexDv" />
@@ -30,8 +29,6 @@ export default function Home() {
       <ContactUsForm />
       <Foot />
       <Footer />
-
-
     </div>
   );
 }

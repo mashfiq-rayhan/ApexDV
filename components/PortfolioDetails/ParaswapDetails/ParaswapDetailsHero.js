@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import styles from "../../../styles/Home.module.css";
 
 const ParaswapDetailsHero = () => {
   const heroData = {
@@ -28,10 +29,9 @@ const ParaswapDetailsHero = () => {
             {heroData.title1} <span>{heroData.subtitle}</span>
           </h1>
           <p>
-            We are the leading DeFi aggregator that unites the liquidity of
-            decentralized <br />
-            exchanges and lending protocols into one comprehensive and secure
-            interface and APIs.{" "}
+            We are the leading DeFi aggregator that unites the liquidity of decentralized <br />
+            exchanges and lending protocols into one comprehensive and secure interface and
+            APIs.{" "}
           </p>
           <button className={styles.button} href="https://www.paraswap.io/">
             <Link className="" href="https://www.paraswap.io/">
