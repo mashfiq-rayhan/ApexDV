@@ -1,3 +1,5 @@
+🌐 LIVE: https://apex-dv.vercel.app/
+
 # ApexDv v3 🚀
 
 ApexDv v3 is a modern web application built with [Next.js](https://nextjs.org/), designed to showcase a portfolio of blockchain, NFT, and web development projects. The platform highlights our expertise in delivering high-quality, scalable, and innovative solutions for clients across various industries.
